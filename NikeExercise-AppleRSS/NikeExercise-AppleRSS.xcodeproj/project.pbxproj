@@ -32,6 +32,8 @@
 		E065B94923FBA57200911C04 /* JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B94823FBA57200911C04 /* JSONResponse.swift */; };
 		E098F23623FBC2DE00789BCA /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E098F23523FBC2DE00789BCA /* UIImageView+DownloadImage.swift */; };
 		E098F23823FBD85400789BCA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E098F23723FBD85400789BCA /* DetailViewController.swift */; };
+		E0C6C52123FC2C2100447CB3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6C52023FC2C2100447CB3 /* Reachability.swift */; };
+		E0C6C52323FC2F4E00447CB3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6C52223FC2F4E00447CB3 /* UIView+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		E065B94823FBA57200911C04 /* JSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponse.swift; sourceTree = "<group>"; };
 		E098F23523FBC2DE00789BCA /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		E098F23723FBD85400789BCA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E0C6C52023FC2C2100447CB3 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E0C6C52223FC2F4E00447CB3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +137,12 @@
 		E065B8E423FAE51100911C04 /* NikeExercise-AppleRSS */ = {
 			isa = PBXGroup;
 			children = (
-				E098F23423FBC2B400789BCA /* Extension */,
-				E065B94523FB916300911C04 /* View */,
+				E0C6C51F23FC2C2100447CB3 /* Resources */,
 				E065B92923FB840E00911C04 /* Service */,
-				E065B93A23FB885100911C04 /* AlbumService.swift */,
 				E065B92523FB5CDA00911C04 /* Navigation */,
+				E098F23423FBC2B400789BCA /* Extension */,
 				E065B93E23FB8BB600911C04 /* ViewModel */,
+				E065B94523FB916300911C04 /* View */,
 				E065B91723FAE9B800911C04 /* Model */,
 				E065B92823FB668D00911C04 /* AppDelegate */,
 				E065B8EE23FAE51500911C04 /* Assets.xcassets */,
@@ -198,6 +202,7 @@
 		E065B92923FB840E00911C04 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E065B93A23FB885100911C04 /* AlbumService.swift */,
 				E065B93523FB859A00911C04 /* Parser */,
 				E065B92A23FB849D00911C04 /* Network */,
 				E065B93223FB853000911C04 /* Result */,
@@ -255,8 +260,17 @@
 			isa = PBXGroup;
 			children = (
 				E098F23523FBC2DE00789BCA /* UIImageView+DownloadImage.swift */,
+				E0C6C52223FC2F4E00447CB3 /* UIView+Constraints.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E0C6C51F23FC2C2100447CB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0C6C52023FC2C2100447CB3 /* Reachability.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +421,8 @@
 				E065B93923FB864200911C04 /* RequestHandler.swift in Sources */,
 				E065B8E823FAE51100911C04 /* SceneDelegate.swift in Sources */,
 				E065B94223FB90BA00911C04 /* AlbumDataSource.swift in Sources */,
+				E0C6C52123FC2C2100447CB3 /* Reachability.swift in Sources */,
+				E0C6C52323FC2F4E00447CB3 /* UIView+Constraints.swift in Sources */,
 				E065B91B23FAEA8C00911C04 /* Album.swift in Sources */,
 				E065B94423FB90DD00911C04 /* DynamicValue.swift in Sources */,
 				E065B93B23FB885100911C04 /* AlbumService.swift in Sources */,
