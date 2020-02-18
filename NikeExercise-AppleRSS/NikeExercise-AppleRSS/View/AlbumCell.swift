@@ -28,8 +28,8 @@ class AlbumCell : UITableViewCell {
     }()
     
     var thumbnailImageView: UIImageView = {
-        let imageView = UIImageView(frame: CGRect(x: 8, y: 0, width: 80, height: 80))
-//        let imageView = UIImageView()
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(systemName: "music.note")
         imageView.contentMode = .scaleAspectFit
         return imageView
@@ -48,9 +48,9 @@ class AlbumCell : UITableViewCell {
         self.addSubview(lblAlbumName)
         self.addSubview(lblArtistName)
         self.addSubview(thumbnailImageView)
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[v0(80@250)]-[v1]-|", options: .init(), metrics: nil, views: ["v0": self.thumbnailImageView, "v1": lblArtistName] ))
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[v0(80)]-[v1]-|", options: .init(), metrics: nil, views: ["v0": self.thumbnailImageView, "v1": lblArtistName] ))
         NSLayoutConstraint(item: self.lblAlbumName, attribute: .left, relatedBy: .equal, toItem: self.lblArtistName, attribute: .left, multiplier: 1, constant: 0).isActive = true
-        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0(80@250)]", options: .init(), metrics: nil, views: ["v0": self.thumbnailImageView]))
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0(80)]", options: .init(), metrics: nil, views: ["v0": self.thumbnailImageView]))
         
         self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[v0]-[v1]", options: .init(), metrics: nil, views: ["v0": self.lblAlbumName,"v1": self.lblArtistName]))
     }
