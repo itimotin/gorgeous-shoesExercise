@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E065B8E623FAE51100911C04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B8E523FAE51100911C04 /* AppDelegate.swift */; };
+		E065B8E823FAE51100911C04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B8E723FAE51100911C04 /* SceneDelegate.swift */; };
+		E065B8EA23FAE51100911C04 /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B8E923FAE51100911C04 /* AlbumTableViewController.swift */; };
+		E065B8EF23FAE51500911C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E065B8EE23FAE51500911C04 /* Assets.xcassets */; };
+		E065B8F223FAE51500911C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065B8F023FAE51500911C04 /* LaunchScreen.storyboard */; };
+		E065B8FD23FAE51500911C04 /* NikeExercise_AppleRSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B8FC23FAE51500911C04 /* NikeExercise_AppleRSSTests.swift */; };
+		E065B90823FAE51500911C04 /* NikeExercise_AppleRSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B90723FAE51500911C04 /* NikeExercise_AppleRSSUITests.swift */; };
+		E065B91923FAE9EA00911C04 /* FeedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B91823FAE9EA00911C04 /* FeedResult.swift */; };
+		E065B91B23FAEA8C00911C04 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B91A23FAEA8C00911C04 /* Album.swift */; };
+		E065B91D23FAEBAD00911C04 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B91C23FAEBAD00911C04 /* Genres.swift */; };
+		E065B92723FB5CF400911C04 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B92623FB5CF400911C04 /* MainNavigationController.swift */; };
+		E065B92C23FB84C400911C04 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B92B23FB84C400911C04 /* RequestFactory.swift */; };
+		E065B92E23FB84E200911C04 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B92D23FB84E200911C04 /* RequestService.swift */; };
+		E065B93023FB850400911C04 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B92F23FB850400911C04 /* Result.swift */; };
+		E065B93423FB853E00911C04 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B93323FB853E00911C04 /* ErrorResult.swift */; };
+		E065B93723FB85AB00911C04 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B93623FB85AB00911C04 /* ParserHelper.swift */; };
+		E065B93923FB864200911C04 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B93823FB864200911C04 /* RequestHandler.swift */; };
+		E065B93B23FB885100911C04 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B93A23FB885100911C04 /* AlbumService.swift */; };
+		E065B94023FB8BDF00911C04 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B93F23FB8BDF00911C04 /* AlbumViewModel.swift */; };
+		E065B94223FB90BA00911C04 /* AlbumDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B94123FB90BA00911C04 /* AlbumDataSource.swift */; };
+		E065B94423FB90DD00911C04 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B94323FB90DD00911C04 /* DynamicValue.swift */; };
+		E065B94723FB916E00911C04 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B94623FB916E00911C04 /* AlbumCell.swift */; };
+		E065B94923FBA57200911C04 /* JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065B94823FBA57200911C04 /* JSONResponse.swift */; };
+		E098F23623FBC2DE00789BCA /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E098F23523FBC2DE00789BCA /* UIImageView+DownloadImage.swift */; };
+		E098F23823FBD85400789BCA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E098F23723FBD85400789BCA /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E065B8F923FAE51500911C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E065B8DA23FAE51100911C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E065B8E123FAE51100911C04;
+			remoteInfo = "NikeExercise-AppleRSS";
+		};
+		E065B90423FAE51500911C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E065B8DA23FAE51100911C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E065B8E123FAE51100911C04;
+			remoteInfo = "NikeExercise-AppleRSS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E065B8E223FAE51100911C04 /* NikeExercise-AppleRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NikeExercise-AppleRSS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E065B8E523FAE51100911C04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E065B8E723FAE51100911C04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E065B8E923FAE51100911C04 /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
+		E065B8EE23FAE51500911C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E065B8F123FAE51500911C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E065B8F323FAE51500911C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E065B8F823FAE51500911C04 /* NikeExercise-AppleRSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NikeExercise-AppleRSSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E065B8FC23FAE51500911C04 /* NikeExercise_AppleRSSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeExercise_AppleRSSTests.swift; sourceTree = "<group>"; };
+		E065B8FE23FAE51500911C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E065B90323FAE51500911C04 /* NikeExercise-AppleRSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NikeExercise-AppleRSSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E065B90723FAE51500911C04 /* NikeExercise_AppleRSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeExercise_AppleRSSUITests.swift; sourceTree = "<group>"; };
+		E065B90923FAE51500911C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E065B91823FAE9EA00911C04 /* FeedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResult.swift; sourceTree = "<group>"; };
+		E065B91A23FAEA8C00911C04 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E065B91C23FAEBAD00911C04 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
+		E065B92623FB5CF400911C04 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		E065B92B23FB84C400911C04 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		E065B92D23FB84E200911C04 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		E065B92F23FB850400911C04 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E065B93323FB853E00911C04 /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		E065B93623FB85AB00911C04 /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		E065B93823FB864200911C04 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		E065B93A23FB885100911C04 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		E065B93F23FB8BDF00911C04 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		E065B94123FB90BA00911C04 /* AlbumDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDataSource.swift; sourceTree = "<group>"; };
+		E065B94323FB90DD00911C04 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		E065B94623FB916E00911C04 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		E065B94823FBA57200911C04 /* JSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponse.swift; sourceTree = "<group>"; };
+		E098F23523FBC2DE00789BCA /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		E098F23723FBD85400789BCA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E065B8DF23FAE51100911C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E065B8F523FAE51500911C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E065B90023FAE51500911C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E065B8D923FAE51100911C04 = {
+			isa = PBXGroup;
+			children = (
+				E065B8E423FAE51100911C04 /* NikeExercise-AppleRSS */,
+				E065B8FB23FAE51500911C04 /* NikeExercise-AppleRSSTests */,
+				E065B90623FAE51500911C04 /* NikeExercise-AppleRSSUITests */,
+				E065B8E323FAE51100911C04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E065B8E323FAE51100911C04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E065B8E223FAE51100911C04 /* NikeExercise-AppleRSS.app */,
+				E065B8F823FAE51500911C04 /* NikeExercise-AppleRSSTests.xctest */,
+				E065B90323FAE51500911C04 /* NikeExercise-AppleRSSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E065B8E423FAE51100911C04 /* NikeExercise-AppleRSS */ = {
+			isa = PBXGroup;
+			children = (
+				E098F23423FBC2B400789BCA /* Extension */,
+				E065B94523FB916300911C04 /* View */,
+				E065B92923FB840E00911C04 /* Service */,
+				E065B93A23FB885100911C04 /* AlbumService.swift */,
+				E065B92523FB5CDA00911C04 /* Navigation */,
+				E065B93E23FB8BB600911C04 /* ViewModel */,
+				E065B91723FAE9B800911C04 /* Model */,
+				E065B92823FB668D00911C04 /* AppDelegate */,
+				E065B8EE23FAE51500911C04 /* Assets.xcassets */,
+				E065B8F023FAE51500911C04 /* LaunchScreen.storyboard */,
+				E065B8F323FAE51500911C04 /* Info.plist */,
+			);
+			path = "NikeExercise-AppleRSS";
+			sourceTree = "<group>";
+		};
+		E065B8FB23FAE51500911C04 /* NikeExercise-AppleRSSTests */ = {
+			isa = PBXGroup;
+			children = (
+				E065B8FC23FAE51500911C04 /* NikeExercise_AppleRSSTests.swift */,
+				E065B8FE23FAE51500911C04 /* Info.plist */,
+			);
+			path = "NikeExercise-AppleRSSTests";
+			sourceTree = "<group>";
+		};
+		E065B90623FAE51500911C04 /* NikeExercise-AppleRSSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E065B90723FAE51500911C04 /* NikeExercise_AppleRSSUITests.swift */,
+				E065B90923FAE51500911C04 /* Info.plist */,
+			);
+			path = "NikeExercise-AppleRSSUITests";
+			sourceTree = "<group>";
+		};
+		E065B91723FAE9B800911C04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E065B91823FAE9EA00911C04 /* FeedResult.swift */,
+				E065B94323FB90DD00911C04 /* DynamicValue.swift */,
+				E065B91A23FAEA8C00911C04 /* Album.swift */,
+				E065B91C23FAEBAD00911C04 /* Genres.swift */,
+				E065B94823FBA57200911C04 /* JSONResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E065B92523FB5CDA00911C04 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E065B92623FB5CF400911C04 /* MainNavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E065B92823FB668D00911C04 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E065B8E523FAE51100911C04 /* AppDelegate.swift */,
+				E065B8E723FAE51100911C04 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E065B92923FB840E00911C04 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E065B93523FB859A00911C04 /* Parser */,
+				E065B92A23FB849D00911C04 /* Network */,
+				E065B93223FB853000911C04 /* Result */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E065B92A23FB849D00911C04 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E065B92B23FB84C400911C04 /* RequestFactory.swift */,
+				E065B92D23FB84E200911C04 /* RequestService.swift */,
+				E065B93823FB864200911C04 /* RequestHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E065B93223FB853000911C04 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E065B92F23FB850400911C04 /* Result.swift */,
+				E065B93323FB853E00911C04 /* ErrorResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		E065B93523FB859A00911C04 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E065B93623FB85AB00911C04 /* ParserHelper.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		E065B93E23FB8BB600911C04 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E065B93F23FB8BDF00911C04 /* AlbumViewModel.swift */,
+				E065B94123FB90BA00911C04 /* AlbumDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E065B94523FB916300911C04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E065B8E923FAE51100911C04 /* AlbumTableViewController.swift */,
+				E065B94623FB916E00911C04 /* AlbumCell.swift */,
+				E098F23723FBD85400789BCA /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E098F23423FBC2B400789BCA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E098F23523FBC2DE00789BCA /* UIImageView+DownloadImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E065B8E123FAE51100911C04 /* NikeExercise-AppleRSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E065B90C23FAE51500911C04 /* Build configuration list for PBXNativeTarget "NikeExercise-AppleRSS" */;
+			buildPhases = (
+				E065B8DE23FAE51100911C04 /* Sources */,
+				E065B8DF23FAE51100911C04 /* Frameworks */,
+				E065B8E023FAE51100911C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NikeExercise-AppleRSS";
+			productName = "NikeExercise-AppleRSS";
+			productReference = E065B8E223FAE51100911C04 /* NikeExercise-AppleRSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E065B8F723FAE51500911C04 /* NikeExercise-AppleRSSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E065B90F23FAE51500911C04 /* Build configuration list for PBXNativeTarget "NikeExercise-AppleRSSTests" */;
+			buildPhases = (
+				E065B8F423FAE51500911C04 /* Sources */,
+				E065B8F523FAE51500911C04 /* Frameworks */,
+				E065B8F623FAE51500911C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E065B8FA23FAE51500911C04 /* PBXTargetDependency */,
+			);
+			name = "NikeExercise-AppleRSSTests";
+			productName = "NikeExercise-AppleRSSTests";
+			productReference = E065B8F823FAE51500911C04 /* NikeExercise-AppleRSSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E065B90223FAE51500911C04 /* NikeExercise-AppleRSSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E065B91223FAE51500911C04 /* Build configuration list for PBXNativeTarget "NikeExercise-AppleRSSUITests" */;
+			buildPhases = (
+				E065B8FF23FAE51500911C04 /* Sources */,
+				E065B90023FAE51500911C04 /* Frameworks */,
+				E065B90123FAE51500911C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E065B90523FAE51500911C04 /* PBXTargetDependency */,
+			);
+			name = "NikeExercise-AppleRSSUITests";
+			productName = "NikeExercise-AppleRSSUITests";
+			productReference = E065B90323FAE51500911C04 /* NikeExercise-AppleRSSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E065B8DA23FAE51100911C04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = IKT;
+				TargetAttributes = {
+					E065B8E123FAE51100911C04 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E065B8F723FAE51500911C04 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E065B8E123FAE51100911C04;
+					};
+					E065B90223FAE51500911C04 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E065B8E123FAE51100911C04;
+					};
+				};
+			};
+			buildConfigurationList = E065B8DD23FAE51100911C04 /* Build configuration list for PBXProject "NikeExercise-AppleRSS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E065B8D923FAE51100911C04;
+			productRefGroup = E065B8E323FAE51100911C04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E065B8E123FAE51100911C04 /* NikeExercise-AppleRSS */,
+				E065B8F723FAE51500911C04 /* NikeExercise-AppleRSSTests */,
+				E065B90223FAE51500911C04 /* NikeExercise-AppleRSSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E065B8E023FAE51100911C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E065B8F223FAE51500911C04 /* LaunchScreen.storyboard in Resources */,
+				E065B8EF23FAE51500911C04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E065B8F623FAE51500911C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E065B90123FAE51500911C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E065B8DE23FAE51100911C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E065B92723FB5CF400911C04 /* MainNavigationController.swift in Sources */,
+				E065B8EA23FAE51100911C04 /* AlbumTableViewController.swift in Sources */,
+				E065B93423FB853E00911C04 /* ErrorResult.swift in Sources */,
+				E065B93723FB85AB00911C04 /* ParserHelper.swift in Sources */,
+				E098F23623FBC2DE00789BCA /* UIImageView+DownloadImage.swift in Sources */,
+				E065B92E23FB84E200911C04 /* RequestService.swift in Sources */,
+				E098F23823FBD85400789BCA /* DetailViewController.swift in Sources */,
+				E065B94923FBA57200911C04 /* JSONResponse.swift in Sources */,
+				E065B8E623FAE51100911C04 /* AppDelegate.swift in Sources */,
+				E065B94723FB916E00911C04 /* AlbumCell.swift in Sources */,
+				E065B91923FAE9EA00911C04 /* FeedResult.swift in Sources */,
+				E065B94023FB8BDF00911C04 /* AlbumViewModel.swift in Sources */,
+				E065B93023FB850400911C04 /* Result.swift in Sources */,
+				E065B91D23FAEBAD00911C04 /* Genres.swift in Sources */,
+				E065B92C23FB84C400911C04 /* RequestFactory.swift in Sources */,
+				E065B93923FB864200911C04 /* RequestHandler.swift in Sources */,
+				E065B8E823FAE51100911C04 /* SceneDelegate.swift in Sources */,
+				E065B94223FB90BA00911C04 /* AlbumDataSource.swift in Sources */,
+				E065B91B23FAEA8C00911C04 /* Album.swift in Sources */,
+				E065B94423FB90DD00911C04 /* DynamicValue.swift in Sources */,
+				E065B93B23FB885100911C04 /* AlbumService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E065B8F423FAE51500911C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E065B8FD23FAE51500911C04 /* NikeExercise_AppleRSSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E065B8FF23FAE51500911C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E065B90823FAE51500911C04 /* NikeExercise_AppleRSSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E065B8FA23FAE51500911C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E065B8E123FAE51100911C04 /* NikeExercise-AppleRSS */;
+			targetProxy = E065B8F923FAE51500911C04 /* PBXContainerItemProxy */;
+		};
+		E065B90523FAE51500911C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E065B8E123FAE51100911C04 /* NikeExercise-AppleRSS */;
+			targetProxy = E065B90423FAE51500911C04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E065B8F023FAE51500911C04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E065B8F123FAE51500911C04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E065B90A23FAE51500911C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E065B90B23FAE51500911C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E065B90D23FAE51500911C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHXNLWSU7R;
+				INFOPLIST_FILE = "NikeExercise-AppleRSS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IKT.NikeExercise-AppleRSS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E065B90E23FAE51500911C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHXNLWSU7R;
+				INFOPLIST_FILE = "NikeExercise-AppleRSS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IKT.NikeExercise-AppleRSS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E065B91023FAE51500911C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHXNLWSU7R;
+				INFOPLIST_FILE = "NikeExercise-AppleRSSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IKT.NikeExercise-AppleRSSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeExercise-AppleRSS.app/NikeExercise-AppleRSS";
+			};
+			name = Debug;
+		};
+		E065B91123FAE51500911C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHXNLWSU7R;
+				INFOPLIST_FILE = "NikeExercise-AppleRSSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IKT.NikeExercise-AppleRSSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeExercise-AppleRSS.app/NikeExercise-AppleRSS";
+			};
+			name = Release;
+		};
+		E065B91323FAE51500911C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHXNLWSU7R;
+				INFOPLIST_FILE = "NikeExercise-AppleRSSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IKT.NikeExercise-AppleRSSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NikeExercise-AppleRSS";
+			};
+			name = Debug;
+		};
+		E065B91423FAE51500911C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHXNLWSU7R;
+				INFOPLIST_FILE = "NikeExercise-AppleRSSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IKT.NikeExercise-AppleRSSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NikeExercise-AppleRSS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E065B8DD23FAE51100911C04 /* Build configuration list for PBXProject "NikeExercise-AppleRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E065B90A23FAE51500911C04 /* Debug */,
+				E065B90B23FAE51500911C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E065B90C23FAE51500911C04 /* Build configuration list for PBXNativeTarget "NikeExercise-AppleRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E065B90D23FAE51500911C04 /* Debug */,
+				E065B90E23FAE51500911C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E065B90F23FAE51500911C04 /* Build configuration list for PBXNativeTarget "NikeExercise-AppleRSSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E065B91023FAE51500911C04 /* Debug */,
+				E065B91123FAE51500911C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E065B91223FAE51500911C04 /* Build configuration list for PBXNativeTarget "NikeExercise-AppleRSSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E065B91323FAE51500911C04 /* Debug */,
+				E065B91423FAE51500911C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E065B8DA23FAE51100911C04 /* Project object */;
+}
