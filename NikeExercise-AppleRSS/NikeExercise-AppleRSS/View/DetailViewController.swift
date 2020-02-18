@@ -26,6 +26,7 @@ class DetailViewController : UIViewController {
     
     var lblCopyRight : UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -55,6 +56,7 @@ class DetailViewController : UIViewController {
         self.view.backgroundColor = .white
         self.lblArtistName.text = self.album?.artistName
         self.lblAlbumName.text = self.album?.name
+        self.lblCopyRight.text = self.album?.copyRight
         if let url = album?.artWorkUrl {
             self.thumbnailImageView.downloadImageFrom(source: url, contentMode: .scaleAspectFit)
         }
@@ -77,12 +79,15 @@ class DetailViewController : UIViewController {
 extension DetailViewController {
     func setUpViewContraints() {
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-50-[v0(300@250)]-50-|", options: [.alignAllCenterX], metrics: nil, views: ["v0": self.thumbnailImageView]))
-        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-50-[v0(300@250)]|", options: [.init()], metrics: nil, views: ["v0": self.thumbnailImageView]))
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-100-[v0]-[v1]-[v2(300@250)]-8-[v3]", options: [.init()], metrics: nil, views: ["v0": self.lblAlbumName,"v1": self.lblArtistName, "v2": self.thumbnailImageView, "v3": self.lblCopyRight]))
+        
+        
+        self.lblCopyRight.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor, multiplier: 1).isActive = true
+        self.lblCopyRight.widthAnchor.constraint(equalToConstant: self.view.frame.width-20).isActive = true
         
         NSLayoutConstraint(item: self.lblAlbumName, attribute: .left, relatedBy: .equal, toItem: self.lblArtistName, attribute: .left, multiplier: 1, constant: 0).isActive = true
         
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[v0]", options: .init(), metrics: nil, views: ["v0": self.lblAlbumName]))
-        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-100-[v0]-[v1]", options: .init(), metrics: nil, views: ["v0": self.lblAlbumName,"v1": self.lblArtistName]))
         
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[v0]-20-|", options: .alignAllBottom, metrics: nil, views: ["v0": self.buttonRedirect]))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: .alignAllCenterX, metrics: nil, views: ["v0": self.buttonRedirect]))
